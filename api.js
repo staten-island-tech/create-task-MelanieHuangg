@@ -1,4 +1,4 @@
-const URL = GET api/fruit/all
+const URL = ""
 
 async function getData(URL)
 try {
