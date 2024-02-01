@@ -2,7 +2,7 @@ const items = [
 
     {
         name: "Sugar Gliders",
-        imgURL: "",
+        imgURL: "https://www.directparrots.co.uk/cdn/shop/files/Sugar-Glider_470x509_crop_top.png?v=1698871644",
         info: "",
         category: "rodents",
     },
@@ -98,3 +98,5 @@ const items = [
         category: "amphibians",
     },
 ]
+
+export{items}
