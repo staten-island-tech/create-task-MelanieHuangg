@@ -1,4 +1,4 @@
-import "../style.css"
+import {items} from "./items.js"
 
 const DOMSelectors = {
     rodents: document.getElementById("rodents-btn"),
@@ -9,108 +9,6 @@ const DOMSelectors = {
     container: document.getElementById("container")
 };
 
-const items = [
-
-    {
-        name: "Sugar Gliders",
-        imgURL: "https://www.directparrots.co.uk/cdn/shop/files/Sugar-Glider_470x509_crop_top.png?v=1698871644",
-        info: "",
-        category: "rodents",
-    },
-
-    {
-        name: "Wallaroos",
-        imgURL: "",
-        info: "",
-        category: "rodents",
-    },
-
-    {
-        name: "Coati",
-        imgURL: "",
-        info: "",
-        category: "rodents",
-    },
-
-    {
-        name: "Praying Mantises",
-        imgURL: "",
-        info: "",
-        category: "insects",
-    },
-
-    {
-        name: "Scorpions",
-        imgURL: "",
-        info: "",
-        category: "insects",
-    },
-
-    {
-        name: "Bearded Dragons",
-        imgURL: "",
-        info: "",
-        category: "reptiles",
-    },
-
-    {
-        name: "Burmese Pythons",
-        imgURL: "",
-        info: "",
-        category: "reptiles",
-    },
-
-    {
-        name: "Ornate Box Turtles",
-        imgURL: "",
-        info: "",
-        category: "reptiles",
-    },
-
-    {
-        name: "Cockatoos",
-        imgURL: " ",
-        info: " ",
-        category: "birds",
-    },
-
-    {
-        name: "Lories",
-        imgURL: " ",
-        info: " ",
-        category: "birds",
-    },
-
-    {
-        name: "Toucans",
-        imgURL: " ",
-        info: " ",
-        category: "birds",
-    },
-
-    {
-        name: "Fire-bellied Toads",
-        imgURL: " ",
-        info: " ",
-        category: "amphibians",
-    },
-
-    {
-        name: "Dwarf Clawed Frogs",
-        imgURL: " ",
-        info: " ",
-        category: "amphibians",
-    },
-
-    {
-        name: "Northern Leopard Frogs",
-        imgURL: " ",
-        info: " ",
-        category: "amphibians",
-    },
-]
-
-
 const createCards = {
     create: function () {
         items.forEach((items) => {
@@ -118,7 +16,7 @@ const createCards = {
                 "beforeend",
                 `
                 <div class="inner">
-                <h2>${items.name}</h2>
+                <h2 class="cardname">${items.name}</h2>
                 <p><img class="picture" src=${items.imgURL}></p>
                 <h3>Info: ${items.info}</h3>
                 </div>
@@ -136,7 +34,7 @@ const createCards = {
                 "beforeend",
                 `
                 <div class="inner">
-                <h2>${items.name}</h2>
+                <h2 class="cardname">${items.name}</h2>
                 <p><img class="picture" src=${items.imgURL}></p>
                 <h3>Info: ${items.info}</h3>
                 </div>
@@ -153,7 +51,7 @@ const createCards = {
                 "beforeend",
                 `
                 <div class="inner">
-                <h2>${items.name}</h2>
+                <h2 class="cardname">${items.name}</h2>
                 <p><img class="picture" src=${items.imgURL}></p>
                 <h3>Info: ${items.info}</h3>
                 </div>
@@ -170,7 +68,7 @@ const createCards = {
                 "beforeend",
                 `
                 <div class="inner">
-                <h2>${items.name}</h2>
+                <h2 class="cardname">${items.name}</h2>
                 <p><img class="picture" src=${items.imgURL}></p>
                 <h3>Info: ${items.info}</h3>
                 </div>
@@ -187,7 +85,7 @@ const createCards = {
                 "beforeend",
                 `
                 <div class="inner">
-                <h2>${items.name}</h2>
+                <h2 class="cardname">${items.name}</h2>
                 <p><img class="picture" src=${items.imgURL}></p>
                 <h3>Info: ${items.info}</h3>
                 </div>
@@ -204,7 +102,7 @@ const createCards = {
                 "beforeend",
                 `
                 <div class="inner">
-                <h2>${items.name}</h2>
+                <h2 class="cardname">${items.name}</h2>
                 <p><img class="picture" src=${items.imgURL}></p>
                 <h3>Info: ${items.info}</h3>
                 </div>
